@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Custom base tweaks */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "intelligent-stock-advisory-system",
+  "version": "1.0.0",
+  "description": "Intelligent Stock Advisory System for the Vietnamese Market",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd server && uvicorn main:app --reload --port 5000 --host 0.0.0.0\" \"pnpm client\"",
+    "server": "cd server && uvicorn main:app --reload --port 5000 --host 0.0.0.0",
+    "client": "pnpm --filter client dev",
+    "build": "pnpm --filter client build",
+    "install:all": "pnpm install",
+    "setup:server": "cd server && python -m venv venv && .\\venv\\Scripts\\activate && pip install -r requirement.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
+}

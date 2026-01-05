@@ -1,0 +1,7 @@
+requests
+pandas
+vnstock
+fastapi
+uvicorn
+joblib
+scikit-learn==1.3.1
